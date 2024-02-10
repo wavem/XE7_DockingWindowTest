@@ -7,10 +7,22 @@
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
-TForm1 *Form1;
+TFormMain *FormMain;
 //---------------------------------------------------------------------------
-__fastcall TForm1::TForm1(TComponent* Owner)
+__fastcall TFormMain::TFormMain(TComponent* Owner)
 	: TForm(Owner)
 {
+	InitProgram();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFormMain::InitProgram() {
+
+	PrintMsg(L"Init Complete");
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFormMain::PrintMsg(UnicodeString _str) {
+	memo->Lines->Add(_str);
 }
 //---------------------------------------------------------------------------
