@@ -54,6 +54,7 @@ __published:	// IDE-managed Components
 	TAdvToolPanel *AdvToolPanel4;
 	TAdvToolPanel *AdvToolPanel5;
 	TButton *Button1;
+	TRTTIInspectorBar *RTTIInspectorBar2;
 	void __fastcall btn_TestClick(TObject *Sender);
 
 private:	// User declarations
