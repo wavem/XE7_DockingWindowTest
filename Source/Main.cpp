@@ -4,6 +4,7 @@
 #pragma hdrstop
 
 #include "Main.h"
+#include "DevForm.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma link "AdvToolBar"
@@ -48,5 +49,13 @@ void __fastcall TFormMain::btn_TestClick(TObject *Sender)
 {
 	//advdockpn->
     DockPanel_Top->ToolBarStyler;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFormMain::btn_DialogClick(TObject *Sender)
+{
+	TFormDev *p_Dlg = new TFormDev(this);
+    p_Dlg->ShowModal();
+    delete p_Dlg;
 }
 //---------------------------------------------------------------------------

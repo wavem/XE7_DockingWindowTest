@@ -847,6 +847,15 @@ object FormMain: TFormMain
       Version = '1.6.0.0'
     end
   end
+  object btn_Dialog: TButton
+    Left = 480
+    Top = 247
+    Width = 75
+    Height = 25
+    Caption = 'DevForm'
+    TabOrder = 8
+    OnClick = btn_DialogClick
+  end
   object AdvMenuStyler1: TAdvMenuStyler
     AntiAlias = aaNone
     Background.Position = bpCenter
