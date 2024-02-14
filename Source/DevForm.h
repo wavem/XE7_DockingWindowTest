@@ -64,6 +64,9 @@
 #include "dxSkinXmas2008Blue.hpp"
 #include "frxDock.hpp"
 #include <Vcl.ExtCtrls.hpp>
+#include "InspectorBar.hpp"
+#include "InspLinks.hpp"
+#include "RTTIInspectorBar.hpp"
 //---------------------------------------------------------------------------
 class TFormDev : public TForm
 {
@@ -73,6 +76,17 @@ __published:	// IDE-managed Components
 	TdxDockPanel *dxDockPanel2;
 	TdxLayoutDockSite *dxLayoutDockSite1;
 	TdxVertContainerDockSite *dxVertContainerDockSite1;
+	TdxDockingManager *dxDockingManager1;
+	TRTTIInspectorBar *RTTIInspectorBar1;
+	void __fastcall AEInspectorEditLink1SetProperties(TObject *Sender, TRect &R, TInspectorItem *Item);
+	void __fastcall RTTIInspectorBar1EditUpdate(TObject *Sender, TInspectorPanel *AInspectorPanel,
+          TInspectorItem *AInspectorItem);
+	void __fastcall RTTIInspectorBar1EditStop(TObject *Sender, TInspectorPanel *AInspectorPanel,
+          TInspectorItem *AInspectorItem);
+	void __fastcall RTTIInspectorBar1EditColorChange(TObject *Sender, TInspectorPanel *AInspectorPanel,
+          TInspectorItem *AInspectorItem, TColor AColor);
+
+
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFormDev(TComponent* Owner);

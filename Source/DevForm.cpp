@@ -62,6 +62,9 @@
 #pragma link "dxSkinWhiteprint"
 #pragma link "dxSkinXmas2008Blue"
 #pragma link "frxDock"
+#pragma link "InspectorBar"
+#pragma link "InspLinks"
+#pragma link "RTTIInspectorBar"
 #pragma resource "*.dfm"
 TFormDev *FormDev;
 //---------------------------------------------------------------------------
@@ -70,3 +73,32 @@ __fastcall TFormDev::TFormDev(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+void __fastcall TFormDev::AEInspectorEditLink1SetProperties(TObject *Sender, TRect &R,
+          TInspectorItem *Item)
+{
+	ShowMessage(L"OnSetProperties");
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFormDev::RTTIInspectorBar1EditUpdate(TObject *Sender, TInspectorPanel *AInspectorPanel,
+          TInspectorItem *AInspectorItem)
+{
+	ShowMessage(L"On Edit Update");
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFormDev::RTTIInspectorBar1EditStop(TObject *Sender, TInspectorPanel *AInspectorPanel,
+          TInspectorItem *AInspectorItem)
+{
+	//ShowMessage(L"stop");
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TFormDev::RTTIInspectorBar1EditColorChange(TObject *Sender, TInspectorPanel *AInspectorPanel,
+          TInspectorItem *AInspectorItem, TColor AColor)
+{
+	ShowMessage(L"Color Change");
+}
+//---------------------------------------------------------------------------
+
