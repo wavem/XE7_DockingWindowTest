@@ -78,6 +78,7 @@ __published:	// IDE-managed Components
 	TdxVertContainerDockSite *dxVertContainerDockSite1;
 	TdxDockingManager *dxDockingManager1;
 	TRTTIInspectorBar *RTTIInspectorBar1;
+	TRTTIInspectorBar *RTTIInspectorBar2;
 	void __fastcall AEInspectorEditLink1SetProperties(TObject *Sender, TRect &R, TInspectorItem *Item);
 	void __fastcall RTTIInspectorBar1EditUpdate(TObject *Sender, TInspectorPanel *AInspectorPanel,
           TInspectorItem *AInspectorItem);

@@ -26,6 +26,12 @@
 #include "AdvSmoothExpanderButtonPanel.hpp"
 #include "AdvSmoothExpanderPanel.hpp"
 #include "AdvSmoothPanel.hpp"
+#include "AdvOfficeSelectors.hpp"
+#include "AdvShape.hpp"
+#include "AdvShaper.hpp"
+#include "PlanDraw.hpp"
+#include "Planner.hpp"
+#include "PictureContainer.hpp"
 //---------------------------------------------------------------------------
 class TFormMain : public TForm
 {
@@ -41,7 +47,6 @@ __published:	// IDE-managed Components
 	TAdvMenuStyler *AdvMenuStyler1;
 	TAdvToolBarFantasyStyler *AdvToolBarFantasyStyler1;
 	TAdvToolBarOfficeStyler *AdvToolBarOfficeStyler1;
-	TAdvToolBarContainer *AdvToolBarContainer1;
 	TAdvToolBar *AdvToolBar4;
 	TAdvGlowMenuButton *AdvGlowMenuButton1;
 	TAdvToolBar *AdvToolBar5;
@@ -56,6 +61,15 @@ __published:	// IDE-managed Components
 	TButton *Button1;
 	TRTTIInspectorBar *RTTIInspectorBar2;
 	TButton *btn_Dialog;
+	TAdvToolBarSeparator *AdvToolBarSeparator1;
+	TAdvGlowButton *AdvGlowButton1;
+	TAdvGlowButton *AdvGlowButton2;
+	TAdvGlowButton *AdvGlowButton3;
+	TAdvGlowButton *AdvGlowButton4;
+	TAdvGlowButton *AdvGlowButton5;
+	TAdvShape *AdvShape1;
+	TShape *Shape1;
+	TPictureContainer *PictureContainer1;
 	void __fastcall btn_TestClick(TObject *Sender);
 	void __fastcall btn_DialogClick(TObject *Sender);
 

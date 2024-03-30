@@ -24,6 +24,12 @@
 #pragma link "AdvSmoothExpanderButtonPanel"
 #pragma link "AdvSmoothExpanderPanel"
 #pragma link "AdvSmoothPanel"
+#pragma link "AdvOfficeSelectors"
+#pragma link "AdvShape"
+#pragma link "AdvShaper"
+#pragma link "PlanDraw"
+#pragma link "Planner"
+#pragma link "PictureContainer"
 #pragma resource "*.dfm"
 TFormMain *FormMain;
 //---------------------------------------------------------------------------
@@ -47,8 +53,12 @@ void __fastcall TFormMain::PrintMsg(UnicodeString _str) {
 
 void __fastcall TFormMain::btn_TestClick(TObject *Sender)
 {
-	//advdockpn->
-    DockPanel_Top->ToolBarStyler;
+//    DockPanel_Top->ToolBarStyler;
+	//ShapeDrawTool->
+
+    TPlannerItem* temp = new TPlannerItem(NULL);
+
+    //ShapeDrawTool->DrawItem(temp
 }
 //---------------------------------------------------------------------------
 
